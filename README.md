@@ -1,62 +1,67 @@
-# Kareem Mohamed — Frontend Developer
+# Profile README — نسخة بصوت بشري
 
-I build production web apps with **JavaScript** and **Supabase** — offline-first where it
-matters, accessible by default, and shipped to real users.
-
-Based in Menoufia, Egypt · Open to Junior/Entry Frontend roles (on-site, hybrid, remote)
-
-📧 kemo8298@gmail.com · 💼 [LinkedIn](https://www.linkedin.com/in/kareem-mohamed-156176180)
+> بديل للنسخة اللي نزلت. نفس الحقائق، بس مكتوبة زي ما مهندس بيتكلم في مقابلة — مش زي ما نموذج لغوي بيكتب.
+> **الطريقة:** افتح `github.com/kareeem7/kareeem7` → القلم ✏️ → امسح الكل → الصق → Commit.
 
 ---
 
-## What I'm building
+```md
+# Kareem Mohamed
 
-### 🩺 [Clinic Management System](https://github.com/kareeem7/clinic)
-A clinic management app for Arabic-speaking clinics: patients, appointments, measurements,
-labs, nutrition plans and a patient portal.
+Frontend developer, Menoufia (Egypt). I build web apps for Arabic-speaking users —
+two of them are public, and both are used by real people, not just deployed.
 
-- **Offline-first PWA** — service worker + offline capture, so a doctor isn't blocked when
-  the connection drops mid-visit
-- **Supabase** with Row Level Security on every table and protected RPCs — no privileged
-  keys in the browser
-- **41 automated test files** (Node test runner + Playwright) covering the main flows
-- **Security headers** (CSP, X-Frame-Options, Referrer-Policy) and SQL excluded from the
-  published bundle
-- Vanilla ES modules, no framework — 30 JS modules, deployed as a Cloudflare Worker
-- 🔗 Live staging: [clinic-staging.kemo8298.workers.dev](https://clinic-staging.kemo8298.workers.dev)
-  *(demo account available on request)*
-
-### 📚 [Menhag — Teacher Management Platform](https://github.com/kareeem7/teaching-wep)
-A platform for teachers to manage students, groups, attendance, grades, lessons and exams.
-
-- Static-first architecture with a Supabase backend layer
-- Full quality gate: ESLint · Stylelint · HTMLHint · unit tests · Playwright E2E
-- Documented architecture decisions and a phased roadmap in `/docs`
+📧 kemo8298@gmail.com · [LinkedIn](https://www.linkedin.com/in/kareem-mohamed-156176180)
 
 ---
 
-## Toolbox
+## Clinic management system
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+[github.com/kareeem7/clinic](https://github.com/kareeem7/clinic) ·
+[staging build](https://clinic-staging.kemo8298.workers.dev) (login required — demo account on request)
 
-**Also working with:** service workers & offline-first architecture, REST/RPC APIs,
-Row Level Security, accessibility (ARIA, focus management), responsive layouts,
-Cloudflare Workers, Playwright, Figma-to-code.
+Doctors here work on bad internet. It drops in the middle of a patient visit, so the app had
+to keep working anyway: writes are queued in the browser and sync when the connection comes
+back. The data side is Supabase, and every table has row-level security, so one clinic can't
+read another clinic's patients even by calling the API directly. The SQL schema is kept out
+of the published bundle; only the public anon key ships to the browser.
+
+Vanilla JavaScript, 30 modules, no framework. 41 test files covering the main flows.
+
+## Menhag — teacher management platform
+
+[github.com/kareeem7/teaching-wep](https://github.com/kareeem7/teaching-wep)
+
+Teachers manage students, groups, attendance, grades and exams in one place. Static-first
+front end with a Supabase layer. ESLint, Stylelint, HTMLHint, unit tests and Playwright are
+wired into the repo so nothing lands without passing.
+
+## What I'm learning
+
+React and TypeScript. I'm rebuilding the clinic dashboard in both — not because the vanilla
+version doesn't work, but because I want to know where a framework actually pays for itself
+and where it just adds weight. I'll write down what I find.
 
 ---
 
-## How I work
-
-- Commit history in conventional format (`feat:` / `fix:` / `docs:`) on branches with PRs
-- Tests before "it works on my machine"
-- README first — if a project can't explain itself in 30 seconds, it isn't finished
+**Tools I use:** JavaScript, Supabase, HTML/CSS, Tailwind, Git, Cloudflare Workers,
+Playwright, Figma. Service workers, RLS policies, accessibility.
+```
 
 ---
 
-<sub>Currently deepening: React and TypeScript — rebuilding my dashboard in both to understand
-where a framework actually earns its place.</sub>
+## الفرق بين النسختين — وليه دي أهم
+
+| النسخة الحالية (اللي نزلت) | النسخة دي |
+|---|---|
+| ٥ بوليتس بنفس الشكل بالظبط: **عنوان عريض** — شرطة — شرح | فقرات عادية بأطوال مختلفة |
+| `—` (em dash) ١٢ مرة | مرة واحدة |
+| emoji في كل عنوان (🩺 📚) | مفيش |
+| شارات shields.io (٦ صور) | مفيش — شكلك مش محتاجها |
+| «so a doctor isn't blocked when the connection drops mid-visit» | «It drops in the middle of a patient visit, so the app had to keep working anyway» |
+| «if a project can't explain itself in 30 seconds, it isn't finished» | اتمسحت — حكمة مصطنعة |
+| «Currently deepening:» | «What I'm learning» |
+
+**ليه ده مهم:** الـ recruiter شاف ٥٠ بروفايل في يومه كلهم بنفس الإيقاع (بوليت، شرطة، شرح، بوليت، شرطة، شرح). لما يشوف السادس بنفس الشكل، دماغه بتقول «AI» وبيقلب. مش لأن الـ AI حرام — لأن ده معناه إنه مش هيعرف يقيس إيه اللي إنت فاهمه فعلاً، فهو بيسيبك ويروح لواحد شكله أوضح.
+
+**النسخة الجديدة فيها تفصيل واحد مميز محدش هيكتبه بالنيابة عنك:** «It drops in the middle of a patient visit». دي جملة حد عاش المشكلة. متغيّرهاش لجملة أعمّ.
