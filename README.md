@@ -1,40 +1,57 @@
 # Kareem Mohamed
 
-Frontend developer, Menoufia (Egypt). I build web apps for Arabic-speaking users —
-two of them are public, and both are used by real people, not just deployed.
+Frontend developer, Menoufia (Egypt). I build web apps for Arabic-speaking users.
+
+Three of them are public. One runs a clinic's daily work; one you can open in the browser right now.
 
 📧 kemo8298@gmail.com · [LinkedIn](https://www.linkedin.com/in/kareem-mohamed-156176180)
 
 ---
 
+## MADAR — open it and start typing
+
+[**kareeem7.github.io/madar**](https://kareeem7.github.io/madar/) · [source](https://github.com/kareeem7/madar)
+
+Tasks, a focus timer and habit tracking in one place. Arabic and English, installable as a
+PWA, and it keeps working with the connection off.
+
+No backend and no build step, so the whole state lives on the device. That makes the boring
+parts matter more than the features: a migration step so an update never eats someone's data,
+weekly local backups, and cross-tab sync so two open tabs don't overwrite each other.
+
 ## Clinic management system
 
-[github.com/kareeem7/clinic](https://github.com/kareeem7/clinic) ·
-[staging build](https://clinic-staging.kemo8298.workers.dev) (login required — demo account on request)
+[source](https://github.com/kareeem7/clinic) · [staging](https://clinic-staging.kemo8298.workers.dev)
+(login required — demo account on request)
 
-Doctors here work on bad internet. It drops in the middle of a patient visit, so the app had
-to keep working anyway: writes are queued in the browser and sync when the connection comes
-back. The data side is Supabase, and every table has row-level security, so one clinic can't
-read another clinic's patients even by calling the API directly. The SQL schema is kept out
-of the published bundle; only the public anon key ships to the browser.
+Arabic-first clinic app: patients, appointments, measurements, lab results, nutrition plans,
+and a portal where a patient follows their own readings.
 
-Vanilla JavaScript, 30 modules, no framework. 41 test files covering the main flows.
+The hard part was underneath. Doctors here lose connection in the middle of a visit, so writes
+queue in the browser and sync when it comes back. Supabase row-level security means one clinic
+can't read another's patients even by calling the API with the public key, and the schema stays
+out of the published bundle. 29 policies, 34 security-definer functions, 41 test files.
 
 ## Menhag — teacher management platform
 
-[github.com/kareeem7/teaching-wep](https://github.com/kareeem7/teaching-wep)
+[source](https://github.com/kareeem7/teaching-wep)
 
-Teachers manage students, groups, attendance, grades and exams in one place. Static-first
-front end with a Supabase layer. ESLint, Stylelint, HTMLHint, unit tests and Playwright are
-wired into the repo so nothing lands without passing.
-
-## What I'm learning
-
-React and TypeScript. I'm rebuilding the clinic dashboard in both — not because the vanilla
-version doesn't work, but because I want to know where a framework actually pays for itself
-and where it just adds weight. I'll write down what I find.
+Teachers run groups, attendance, grades and exams in one place. Static front end with a
+Supabase layer, and nothing lands without passing ESLint, Stylelint, HTMLHint, unit tests and
+Playwright.
 
 ---
 
-**Tools I use:** JavaScript, Supabase, HTML/CSS, Tailwind, Git, Cloudflare Workers,
-Playwright, Figma. Service workers, RLS policies, accessibility.
+## What I'm learning
+
+React and TypeScript.
+
+I've argued that a build step gets in the way of small apps. That was a fair argument for
+something that has to open from `file://`, and it has run out. MADAR is small and has no
+backend, so it's the first thing I'm porting — and I'm writing down where the framework
+actually pays for itself and where it just adds weight.
+
+---
+
+**Tools I use:** JavaScript, Supabase, HTML/CSS, Tailwind, Git, Cloudflare Workers, Playwright,
+Figma. Service workers, RLS policies, accessibility.
