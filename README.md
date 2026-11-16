@@ -1,23 +1,36 @@
 # Kareem Mohamed
 
-Frontend developer, Menoufia (Egypt). I build web apps for Arabic-speaking users.
+Frontend developer, Menoufia (Egypt). I build web apps for Arabic-speaking users — React,
+JavaScript and Supabase, mostly without a build step.
 
-Three of them are public. One runs a clinic's daily work; one you can open in the browser right now.
+Four public projects. Two you can open in the browser right now.
 
 📧 kemo8298@gmail.com · [LinkedIn](https://www.linkedin.com/in/kareem-mohamed-156176180)
 
 ---
 
+## RŪH — a working storefront (React)
+
+[**kareeem7.github.io/ruh-**](https://kareeem7.github.io/ruh-/) · [source](https://github.com/kareeem7/ruh-)
+
+A clothing store for a made-up Cairo brand: 24 products, filters, cart, wishlist, compare,
+3-step checkout with six payment methods, accounts, Arabic/English with an RTL flip, dark mode,
+currency switcher.
+
+React 18 and `htm` loaded from a CDN, so there's no bundler — the whole store is a folder you
+can open with a double click. Being able to see the code that renders a page without a build
+tool was worth more to me than the usual setup.
+
 ## MADAR — open it and start typing
 
 [**kareeem7.github.io/madar**](https://kareeem7.github.io/madar/) · [source](https://github.com/kareeem7/madar)
 
-Tasks, a focus timer and habit tracking in one place. Arabic and English, installable as a
-PWA, and it keeps working with the connection off.
+Tasks, a focus timer and habit tracking. Arabic and English, installable as a PWA, keeps
+working with the connection off.
 
-No backend and no build step, so the whole state lives on the device. That makes the boring
-parts matter more than the features: a migration step so an update never eats someone's data,
-weekly local backups, and cross-tab sync so two open tabs don't overwrite each other.
+No backend and no build step, so the state lives on the device. That makes the boring parts
+matter more than the features: a migration step so an update never eats someone's data, weekly
+local backups, and cross-tab sync so two open tabs don't overwrite each other.
 
 ## Clinic management system
 
@@ -42,16 +55,13 @@ Playwright.
 
 ---
 
-## What I'm learning
+## What I'm working on
 
-React and TypeScript.
-
-I've argued that a build step gets in the way of small apps. That was a fair argument for
-something that has to open from `file://`, and it has run out. MADAR is small and has no
-backend, so it's the first thing I'm porting — and I'm writing down where the framework
-actually pays for itself and where it just adds weight.
+TypeScript, and moving from React-by-CDN to a real toolchain — Vite, proper modules, component
+tests. I've built enough with React to know the state model; what I haven't done is the part
+every job listing assumes: a typed codebase that builds.
 
 ---
 
-**Tools I use:** JavaScript, Supabase, HTML/CSS, Tailwind, Git, Cloudflare Workers, Playwright,
-Figma. Service workers, RLS policies, accessibility.
+**Tools I use:** JavaScript, React, Supabase, HTML/CSS, Tailwind, Git, Cloudflare Workers,
+Playwright, Figma. Service workers, RLS policies, accessibility.
