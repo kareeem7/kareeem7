@@ -11,7 +11,7 @@ Four public projects. Two you can open in the browser right now.
 
 ## RŪH — a working storefront (React)
 
-[**kareeem7.github.io/ruh-**](https://kareeem7.github.io/Ruh/) · [source](https://github.com/kareeem7/ruh-)
+[**kareeem7.github.io/Ruh**](https://kareeem7.github.io/Ruh/) · [**admin panel**](https://kareeem7.github.io/Ruh/#/admin) (PIN `2026`) · [source](https://github.com/kareeem7/Ruh)
 
 A clothing store for a made-up Cairo brand: 24 products, filters, cart, wishlist, compare,
 3-step checkout with six payment methods, accounts, Arabic/English with an RTL flip, dark mode,
@@ -20,6 +20,11 @@ currency switcher.
 React 18 and `htm` loaded from a CDN, so there's no bundler — the whole store is a folder you
 can open with a double click. Being able to see the code that renders a page without a build
 tool was worth more to me than the usual setup.
+
+Behind the storefront sits an admin panel at `#/admin` — a PIN gate, six live counters, a
+low-stock rail, an add/edit form with validation, and every order that comes through. What you
+add there appears in the grid, the search and the filters immediately, because both sides read
+the same array. It's the part I'd demo first: a store is easy to mock, a back office isn't.
 
 ## MADAR — open it and start typing
 
