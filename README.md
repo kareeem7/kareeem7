@@ -11,7 +11,7 @@ Four public projects. Two you can open in the browser right now.
 
 ## RŪH — a working storefront (React)
 
-[**kareeem7.github.io/ruh-**](https://kareeem7.github.io/ruh-/) · [source](https://github.com/kareeem7/ruh-)
+[**kareeem7.github.io/ruh-**](https://kareeem7.github.io/Ruh/) · [source](https://github.com/kareeem7/ruh-)
 
 A clothing store for a made-up Cairo brand: 24 products, filters, cart, wishlist, compare,
 3-step checkout with six payment methods, accounts, Arabic/English with an RTL flip, dark mode,
